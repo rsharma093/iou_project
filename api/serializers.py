@@ -39,7 +39,6 @@ class UsersSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class BalanceSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Balance
         fields = ('borrower', 'lender', 'amount', 'expiration')
