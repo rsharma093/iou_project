@@ -1,0 +1,88 @@
+[
+    {
+        "model": "api.users",
+        "pk": 1,
+        "fields": {
+            "name": "Adam"
+        }
+    },
+
+    {
+        "model": "api.users",
+        "pk": 2,
+        "fields": {
+            "name": "Bob"
+        }
+    },
+
+    {
+        "model": "api.users",
+        "pk": 3,
+        "fields": {
+            "name": "Chuck"
+        }
+    },
+
+   {
+        "model": "api.users",
+        "pk": 4,
+        "fields": {
+            "name": "Dan"
+        }
+    },
+
+    {
+        "model": "api.Balance",
+        "pk": 1,
+        "fields": {
+            "borrower": 1,
+            "lender": 2,
+            "amount": 12.0,
+            "reason": "xyz"
+        }
+    },
+
+  {
+        "model": "api.Balance",
+        "pk": 2,
+        "fields": {
+            "borrower": 1,
+            "lender": 3,
+            "amount": 4.0,
+            "reason": "xyz"
+        }
+    },
+
+  {
+        "model": "api.Balance",
+        "pk": 3,
+        "fields": {
+            "borrower": 1,
+            "lender": 4,
+            "amount": 9.5,
+            "reason": "xyz"
+        }
+    },
+
+  {
+        "model": "api.Balance",
+        "pk": 4,
+        "fields": {
+            "borrower": 2,
+            "lender": 1,
+            "amount": 6.5,
+            "reason": "xyz"
+        }
+    },
+
+  {
+        "model": "api.Balance",
+        "pk": 5,
+        "fields": {
+            "borrower": 4,
+            "lender": 1,
+            "amount": 2.75,
+            "reason": "xyz"
+        }
+    }
+]
