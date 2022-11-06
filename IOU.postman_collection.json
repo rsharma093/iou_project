@@ -98,6 +98,39 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Expire IOUs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n  expireIous {\n    id\n    lender\n    borrower\n    expiration\n    amount\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/graphql/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
