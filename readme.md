@@ -13,4 +13,4 @@ $ python manage.py runserver
 ```
  
 ## Postman Collection
-Please check the [postman collection](https://github.com/rsharma093/gmail_parser_apis/blob/master/Gmail_Parser.postman_collection.json) to run APIs.
+Please check the [postman collection](https://github.com/rsharma093/iou_project/blob/main/IOU.postman_collection.json) to run APIs.
