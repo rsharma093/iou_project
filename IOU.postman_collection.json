@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "6665214b-7481-46f7-923c-93d4e1ed667c",
+		"name": "IOU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24161714"
+	},
+	"item": [
+		{
+			"name": "SettleUp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/settleup/?users=['Adam', 'Dan']",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"settleup",
+						""
+					],
+					"query": [
+						{
+							"key": "users",
+							"value": "['Adam', 'Dan']"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create IOU",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lender\": \"Dan\",\n    \"borrower\": \"Jon\",\n    \"amount\": 5.25,\n    \"expiration\": 1667644797\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/iou/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"iou",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jon\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/settleup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"settleup",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
