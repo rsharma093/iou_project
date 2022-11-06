@@ -42,7 +42,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"lender\": \"Dan\",\n    \"borrower\": \"Jon\",\n    \"amount\": 5.25,\n    \"expiration\": 1667644797\n}",
+					"raw": "{\n    \"lender\": \"Dan\",\n    \"borrower\": \"Dev\",\n    \"amount\": 5.25,\n    \"expiration\": 1667724724\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -74,7 +74,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Jon\" \n}",
+					"raw": "{\n    \"name\": \"Tom\" \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -82,7 +82,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/settleup/",
+					"raw": "http://127.0.0.1:8000/add/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -92,7 +92,7 @@
 					],
 					"port": "8000",
 					"path": [
-						"settleup",
+						"add",
 						""
 					]
 				}
